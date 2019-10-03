@@ -10,6 +10,9 @@ import { ConfigurarEvaluacionComponent } from './pages/configurar-evaluacion/con
 import { ListarEvaluacionComponent } from './pages/listar-evaluacion/listar-evaluacion.component';
 import { EvaluarseComponent } from './pages/evaluarse/evaluarse.component';
 import { FormsModule } from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -19,13 +22,15 @@ import { FormsModule } from '@angular/forms';
     SidebarComponent,
     ConfigurarEvaluacionComponent,
     ListarEvaluacionComponent,
-    EvaluarseComponent
+    EvaluarseComponent,
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
